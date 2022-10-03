@@ -1,8 +1,12 @@
+import Container from "../layout/Container";
+
 const Footer = () => {
 
   return(
     <>
-      Footer
+      <Container>
+        <p>Footer</p>
+      </Container>
     </>
   )
 };
