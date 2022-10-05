@@ -8,7 +8,7 @@ export default function Container(props: IProps) {
   return (
     <>
       <div>
-        <div className='max-w-[1224px] m-auto'>
+        <div className='max-w-[1224px] mx-6 xl:m-auto'>
           { props.children }
         </div>
       </div>

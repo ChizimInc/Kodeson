@@ -22,6 +22,12 @@ module.exports = {
       '5xl': '3rem',
       '6xl': '4rem',
     },
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1224px'
+    },
     extend: {
       fontFamily: {
         sans: ['Ubuntu', 'Public Sans', ...defaultTheme.fontFamily.sans],
@@ -58,15 +64,15 @@ module.exports = {
           'very-light-gray': 'hsl(0, 0%, 98%)',
           white: 'hsl(0, 0%, 100%)',
         },
-        'app-color-100': '#040905',
-        'app-color-200': '#17271B',
+        'app-color-100': '#D33F79',
+        'app-color-200': '#292929',
         'app-color-300': '#25723E',
         'app-color-400': '#FFFFFF',
         'app-color-500': '#EAF0EC',
       },
       backgroundImage: () => ({
-        'header-desktop': "url('/images/bg-intro-desktop.svg')",
-        'header-mobile': "url('/images/bg-intro-mobile.svg')",
+        'logo-navbar': "url('/logo.svg')",
+        'elipse-background': "url('/images/background/elipse.svg')",
         'image-mockups': "url('/images/image-mockups.png')",
       }),
       backgroundSize: {

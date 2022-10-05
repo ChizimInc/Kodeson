@@ -9,17 +9,18 @@ export default function Navbar() {
   return (
     <>
       <Container>
-        <div className='flex justify-between h-[104px] items-center'>
-          <div>
-            Logo
+        <div className='flex justify-between h-[86px] items-center'>
+          <div className='flex items-center'>
+            <div className='bg-logo-navbar w-[36px] h-[36px] bg-no-repeat bg-center bg-contain'></div>
+            <div className='ml-[1px] text-[26px] font-bold'>Finhub</div>
           </div>
           <div>
-            <div className='flex text-[16px]'>
-              <div className='text-[16px]'>Solution</div>
-              <div>Careers</div>
-              <div>About us</div>
-              <div>Imprint</div>
-              <div>
+            <div className='flex text-[16px] items-center'>
+              <div className='mx-3 cursor-pointer'>Solution</div>
+              <div className='mx-3 cursor-pointer'>Careers</div>
+              <div className='mx-3 cursor-pointer'>About us</div>
+              <div className='mx-3 cursor-pointer'>Imprint</div>
+              <div  className='mx-3 bg-app-color-100 rounded-full py-[12px] px-[24px] text-white cursor-pointer'>
                 <p>Contact</p>
               </div>
             </div>
