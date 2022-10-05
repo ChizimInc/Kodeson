@@ -1,6 +1,8 @@
 import React from 'react';
 import { useRouter } from 'next/router';
+
 import Container from './Container';
+import { Button } from '../components/Button';
 
 
 export default function Navbar() {
@@ -20,9 +22,7 @@ export default function Navbar() {
               <div className='mx-3 cursor-pointer'>Careers</div>
               <div className='mx-3 cursor-pointer'>About us</div>
               <div className='mx-3 cursor-pointer'>Imprint</div>
-              <div  className='mx-3 bg-app-color-100 rounded-full py-[12px] px-[24px] text-white cursor-pointer'>
-                <p>Contact</p>
-              </div>
+              <Button title='Contact' />
             </div>
           </div>
         </div>

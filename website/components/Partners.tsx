@@ -9,7 +9,7 @@ export const Partners = (props: IProps) => {
 	return (
 		<>
 			<Container>
-				<div className='my-16'>
+				<div className='my-24'>
 					<p>Trusted by:</p>
 					<div className='flex justify-between py-5'>
 						{
