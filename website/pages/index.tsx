@@ -5,7 +5,7 @@ import { useState } from 'react'
 import Container from '../layout/Container'
 import Background from '../layout/Background'
 import { Partners } from '../components/Partners'
-import { Cart } from '../components/Cart'
+import { Cart } from '../components/carts/Cart'
 import { Button } from '../components/Button'
 import { TechList } from '../components/TechList'
 
@@ -13,6 +13,9 @@ import { Backend } from '../components/dev-logo/Backend'
 import { Devops } from '../components/dev-logo/DevOps'
 import { Frontend } from '../components/dev-logo/Frontend'
 import { Mobile } from '../components/dev-logo/Mobile'
+
+import { LongCart } from '../components/carts/LongCart'
+import { UserCart } from '../components/carts/UserCart'
 
 const Home: NextPage = () => {
   const [ showLogo, setShowLogo ] = useState(0)
@@ -90,7 +93,7 @@ const Home: NextPage = () => {
               />
             </div>
             <div className='flex justify-center my-20'>
-              <Button title='Check all solutions' />
+              <Button title='Check all solutions' color='bg-app-color-100' />
             </div>
           </div>
         </Container>
@@ -98,7 +101,7 @@ const Home: NextPage = () => {
       <div className='flex justify-center bg-[#292929] text-white mt-36'>
         <Container>
           <div className='flex mb-20'>
-            <div className='flex items-center'>
+            <div className='hidden lg:flex items-center'>
               <div className='w-[324px] h-[467px]'>
                 {
                   devLogo()
@@ -106,10 +109,10 @@ const Home: NextPage = () => {
               </div>
             </div>
             <div className='max-w-[980px]'>
-              <div className='text-[42px] font-bold mt-24'>
+              <div className='text-[42px] font-bold mt-24 flex justify-center lg:justify-start'>
                 <p className='ml-12'>Our techstack</p>
               </div>
-              <div className='flex flex-wrap justify-start'>
+              <div className='flex flex-wrap justify-center lg:justify-start'>
                 <div 
                   onMouseEnter={() => setShowLogo(1)}
                   onMouseLeave={() => setShowLogo(0)}
@@ -178,6 +181,74 @@ const Home: NextPage = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </Container>
+      </div>
+      <div>
+        <Background>
+          <Container>
+            <div>
+              <div className='text-[42px] font-bold mt-32 mb-24 flex justify-center'>
+                <p className='ml-12'>Why Finhub</p>
+              </div>
+              <div className='flex justify-around'>
+               
+                <LongCart icon='/icons/rocket.svg' content='We are continuously training our team to adapt. Just like evolution.' />
+                <LongCart icon='/icons/heart.svg' content='We strive to have a nuanced understanding of your needs.' />
+                
+              </div>
+              <div className='flex justify-around mt-6'>
+                
+                <LongCart icon='/icons/target.svg' content='We assign only the staff that truly fits your project. No corners cut.' />
+                <LongCart icon='/icons/smile.svg' content='We aim to make our team happy so that you can be happy too.' />
+    
+              </div>
+            </div>
+          </Container>
+        </Background>
+        <Background>
+          <Container>
+            <div className='mb-52'>
+              <div className='text-[42px] font-bold mt-52 mb-24 flex justify-center'>
+                <p className='ml-12'>Our clients said</p>
+              </div>
+              <div className='flex justify-around'>
+               
+                <UserCart 
+                  image='/icons/user-photos/john.svg' 
+                  name='John Doe'
+                  company='Oppo Mobile'
+                  text='“It was a pleasure to work with Finhub. They assisted our company with the development of a SaaS platform for medical professionals.”'
+                />
+                <UserCart 
+                  image='/icons/user-photos/angelina.svg' 
+                  name='Angelina Jolie'
+                  company='Netflix'
+                  text='“It was a pleasure to work with Finhub. They assisted our company with the development of a SaaS platform for medical professionals. They assisted our company with the development of a SaaS platform for medical professionals.”' 
+                />
+                <UserCart 
+                  image='/icons/user-photos/antonio.svg' 
+                  name='Antonio Favela'
+                  company='Novello'
+                  text='“It was a pleasure to work with Finhub. They assisted our company with the development of a SaaS platform for medical professionals.”' 
+                />
+
+              </div>
+            </div>
+          </Container>
+        </Background>
+        <Container>
+          <div className='w-full min-h-[488px] bg-[#D23C77] rounded-3xl text-white mb-36 flex flex-col items-center'>
+            <div className='text-[48px] font-bold text-center mt-[76px] leading-[56px] mx-12'>
+              <p>Got a project?</p>
+							<p>Let's build it properly. Together.</p>
+            </div>
+						<div className='text-[18px] max-w-[660px] mt-[60px] text-center mx-12'>
+							<p>Have a great product idea, or looking for a remote team to build products for your company? We would love to hear from you.</p>
+						</div>
+						<div className='mt-[60px] mb-16'>
+							<Button title='Contact' color='bg-app-color-400' textColor='text-[#D33F79]' />
+						</div>
           </div>
         </Container>
       </div>

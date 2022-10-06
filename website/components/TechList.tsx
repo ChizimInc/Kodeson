@@ -5,7 +5,7 @@ type IProps = {
 
 export const TechList = (props: IProps) => {
 	return (
-		<div className="m-12">
+		<div className="m-12 min-w-[260px]">
 			<p className="text-[24px] font-bold">{props.title}</p>
 			<div className="mt-10 text-[14px] font-normal">
 				{

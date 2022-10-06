@@ -22,7 +22,7 @@ export default function Navbar() {
               <div className='mx-3 cursor-pointer'>Careers</div>
               <div className='mx-3 cursor-pointer'>About us</div>
               <div className='mx-3 cursor-pointer'>Imprint</div>
-              <Button title='Contact' />
+              <Button title='Contact' color='bg-app-color-100' />
             </div>
           </div>
         </div>
