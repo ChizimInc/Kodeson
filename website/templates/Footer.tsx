@@ -1,12 +1,14 @@
+import Image from 'next/image'
+import Link from 'next/link';
+
 import Container from "../layout/Container";
 import { FooterLinks } from "../utils/AppData";
-import Image from 'next/image'
 
 const Footer = () => {
 
   return(
     <>
-      <div className='flex justify-center bg-[#292929] text-white min-h-[419px]'>
+      <div className='flex justify-center bg-[#292929] text-white min-h-[419px] z-50'>
         <Container>
           <div className="flex justify-between mt-[80px]">
             <div>
@@ -29,7 +31,9 @@ const Footer = () => {
                 {
                   FooterLinks.map( item => (
                     <div className="text-[16px] my-3 font-light cursor-pointer">
-                      <p>{item.name}</p>
+                      <Link href={item.link} passHref>
+                        <p>{item.name}</p>
+                      </Link>
                     </div>
                   ))
                 }

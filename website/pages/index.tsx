@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useState } from 'react'
 
 import Container from '../layout/Container'
@@ -49,12 +50,14 @@ const Home: NextPage = () => {
                 that adjusts to your specific needs without wasting your time.</p>
             </div>
             <div className='mt-[30px] text-[#3262D1] cursor-pointer'>
-              <div className='flex'>
-                <p>Our solutions</p>
-                <div className='ml-2 mt-1'>
-                  <Image src="/icons/arrow-right.svg" width={15} height={15} />
+              <Link href='/solution' passHref>
+                <div className='flex'>
+                  <p>Our solutions</p>
+                  <div className='ml-2 mt-1'>
+                    <Image src="/icons/arrow-right.svg" width={15} height={15} />
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </Container>
@@ -93,7 +96,7 @@ const Home: NextPage = () => {
               />
             </div>
             <div className='flex justify-center my-20'>
-              <Button title='Check all solutions' color='bg-app-color-100' />
+              <Button title='Check all solutions' color='bg-app-color-100' href='/solution' />
             </div>
           </div>
         </Container>
@@ -247,7 +250,7 @@ const Home: NextPage = () => {
 							<p>Have a great product idea, or looking for a remote team to build products for your company? We would love to hear from you.</p>
 						</div>
 						<div className='mt-[60px] mb-16'>
-							<Button title='Contact' color='bg-app-color-400' textColor='text-[#D33F79]' />
+							<Button title='Contact' color='bg-app-color-400' textColor='text-[#D33F79]' href='/contact' />
 						</div>
           </div>
         </Container>
