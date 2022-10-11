@@ -6,15 +6,12 @@ services:
       dockerfile: ./docker/frontend/Dockerfile
       context: ./
 
-  nginx-ssl-proxy:
-    image: danieldent/nginx-ssl-proxy
-    restart: always
-    environment:
-      UPSTREAM: frontend:3000
-      SERVERNAME: 167.99.140.255
-      EXTRANAMES: www.167.99.140.255
-    ports:
-      - "80:80"
-      - "443:443"
+  web:
+    image: nginx
     volumes:
-      - "/etc/letsencrypt"
+    - ./templates:/etc/nginx/templates
+    ports:
+    - "3000:80"
+    environment:
+    - NGINX_HOST=167.99.140.255
+    - NGINX_PORT=80
