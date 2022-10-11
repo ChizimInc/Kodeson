@@ -6,4 +6,7 @@ module.exports = {
     loader: 'akamai',
     path: '',
   },
+  experimental: {
+    forceSwcTransforms: true,
+  },
 }

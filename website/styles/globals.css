@@ -4,8 +4,8 @@
 
 @font-face {
   font-family: 'WorkSans';
-  src: url('../assets/WorkSans/WorkSans-Light.ttf');
-  src: url('../assets/WorkSans/WorkSans-Medium.ttf');
+  src: url('/assets/WorkSans/WorkSans-Light.ttf');
+  src: url('/assets/WorkSans/WorkSans-Medium.ttf');
   font-weight: 400;
   font-style: normal;
 }
