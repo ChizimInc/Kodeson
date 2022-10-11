@@ -5,14 +5,14 @@ services:
     build: 
       dockerfile: ./docker/frontend/Dockerfile
       context: ./
-      
+
   nginx-ssl-proxy:
     image: danieldent/nginx-ssl-proxy
     restart: always
     environment:
       UPSTREAM: frontend:3000
-      SERVERNAME: anderscapital.eu
-      EXTRANAMES: www.anderscapital.eu
+      SERVERNAME: 167.99.140.255
+      EXTRANAMES: www.167.99.140.255
     ports:
       - "80:80"
       - "443:443"
