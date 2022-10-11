@@ -109,7 +109,7 @@ export default function Careers() {
               <p className='max-w-[433px] text-center'>Real diversity means diversity of background. When hiring, we look for complementary talent. We believe it is far more valuable than conformist talent.</p>
             </div>
             <div className='flex justify-center text-[13px] leading-[24px] my-3'>
-              <p className='max-w-[270px] text-center'>You don't have a degree? Cool. Are you a national chess champion? Great. Or, maybe you are into astronomy? Alright.</p>
+              <p className='max-w-[270px] text-center'>You don&apos;t have a degree? Cool. Are you a national chess champion? Great. Or, maybe you are into astronomy? Alright.</p>
             </div>
             <div className='flex justify-center text-[13px] leading-[24px] my-3'>
               <p className='max-w-[270px] text-center'>We got a spot for you</p>

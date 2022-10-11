@@ -62,7 +62,7 @@ export default function Solution() {
           <div className='w-full min-h-[488px] bg-[#D23C77] rounded-3xl text-white mt-44 mb-36 flex flex-col items-center'>
             <div className='text-[48px] font-bold text-center mt-[76px] leading-[56px] mx-12'>
               <p>Got a project?</p>
-							<p>Let's build it properly. Together.</p>
+							<p>Let&apos;s build it properly. Together.</p>
             </div>
 						<div className='text-[18px] max-w-[660px] mt-[60px] text-center mx-12'>
 							<p>Have a great product idea, or looking for a remote team to build products for your company? We would love to hear from you.</p>

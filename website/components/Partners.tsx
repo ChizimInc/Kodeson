@@ -14,7 +14,7 @@ export const Partners = (props: IProps) => {
 					<div className='flex justify-between py-5'>
 						{
 							props.images.map(item => (
-								<div>
+								<div key={item}>
 									<Image src={item} width={120} height={50} />
 								</div>
 							))

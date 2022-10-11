@@ -13,7 +13,7 @@ export const CareersList = (props: IProps) => {
         <div className={`w-[390px] ${props.revert ? 'text-left' : 'text-right'}`}>
           {
             props.text.map( item => (
-              <p>{item}</p>
+              <p key={item}>{item}</p>
             ))
           }
         </div>

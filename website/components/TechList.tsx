@@ -10,7 +10,7 @@ export const TechList = (props: IProps) => {
 			<div className="mt-10 text-[14px] font-normal">
 				{
 					props.list.map( item => (
-							<p className="my-3">{item}</p>
+							<p key={item} className="my-3">{item}</p>
 					))
 				}
 			</div>
