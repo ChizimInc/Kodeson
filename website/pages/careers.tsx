@@ -5,6 +5,7 @@ import Container from '../layout/Container'
 import Background from '../layout/Background'
 import { Button } from '../components/Button'
 import { CareersList } from '../components/CareersList'
+import { ApplyCart } from '../components/carts/ApplyCart'
 
 export default function Careers() {
   return (
@@ -116,6 +117,23 @@ export default function Careers() {
           </div>
         </Container>
       </Background>
+      <div className='flex justify-center bg-[#292929] text-white mt-36'>
+        <Container>
+          <div>
+            <div className='flex justify-center text-[40px] font-bold mt-12 my-10'>
+              <p>We would love to work with you</p>
+            </div>
+            <div className='flex justify-center mt-[70px] text-[16px] leading-[32px]'>
+              <p className='max-w-[286px] text-center'>Choose a job opening that suits you and apply with confidence.</p>
+            </div>
+            <div className='mt-[70px] mb-5 flex justify-between'>
+              <ApplyCart title='Frontend Developer' address='In-office, Chisinau' />
+              <ApplyCart title='Flutter Developer' address='In-office, Chisinau' />
+              <ApplyCart title='QA Engineer' address='In-office, Chisinau' />
+            </div>
+          </div>
+        </Container>
+      </div>
     </>
   )
 }
