@@ -1,0 +1,7 @@
+website/.git/
+website/.gitignore
+website/.next/  
+.dockerignore
+docker-compose.yml
+website/node_modules/       
+docker  
