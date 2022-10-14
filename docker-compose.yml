@@ -1,4 +1,4 @@
-version: '3.4'
+version: '3.8'
 
 services:
   frontend:
@@ -7,6 +7,6 @@ services:
       context: ./
 
   nginx:
-    build: ./docker/nginx
+    build: ./docker/nginx/
     ports:
-      -80:80
+      - "80:80"
