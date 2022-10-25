@@ -5,6 +5,11 @@ services:
     build: 
       dockerfile: ./docker/frontend/Dockerfile
       context: ./
+    
+  api: 
+    build:
+      dockerfile: ./docker/python-email-sender/Dockerfile
+      context: ./
 
   nginx:
     build: ./docker/nginx/
