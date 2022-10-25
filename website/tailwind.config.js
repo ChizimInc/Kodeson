@@ -30,7 +30,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ['Ubuntu', 'Public Sans', ...defaultTheme.fontFamily.sans],
+        worksans: ["WorkSans", "sans-serif"]
       },
       colors: {
         primary: {

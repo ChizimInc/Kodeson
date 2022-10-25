@@ -1,7 +1,7 @@
 export const AppConfig = {
-  site_name: 'Finhubss',
-  title: 'Finhub Scaling Solution',
-  description: 'Finhub Scaling Solution',
+  site_name: 'Kodeson',
+  title: 'Kodeson',
+  description: 'Kodeson',
   locale: 'en',
   email: 'info@finhubss.com',
   adress: 'Beatrixgasse 27-2-15, 1030 Wien, Austria'

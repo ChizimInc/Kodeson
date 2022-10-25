@@ -12,11 +12,11 @@ export default function Navbar() {
   return (
     <>
       <Container>
-        <div className='flex justify-between h-[86px] items-center'>
+        <div className='flex justify-between h-[86px] items-center font-worksans'>
           <Link href='/' passHref>
             <div className='flex items-center cursor-pointer'>
-                <div className='bg-logo-navbar w-[36px] h-[36px] bg-no-repeat bg-center bg-contain'></div>
-                <div className='ml-[1px] text-[26px] font-bold'>Finhub</div>
+                <div className='bg-logo-navbar w-[46px] h-[36px] bg-no-repeat bg-center bg-contain'></div>
+                <div className='ml-[3px] text-[26px] font-bold'>Kodeson</div>
             </div>
           </Link>
           <div>

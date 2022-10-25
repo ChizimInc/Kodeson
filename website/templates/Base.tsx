@@ -10,7 +10,7 @@ const Base = (props: any) => {
     <div className='antialiased bg-white text-app-color-200 right-0 left-0'>
       <Meta title={AppConfig.title} description={AppConfig.description} />
       <Navbar />
-      <div>
+      <div className='body-font font-worksans'>
         {props.children}
       </div>
       <Footer />

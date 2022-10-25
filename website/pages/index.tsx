@@ -20,20 +20,6 @@ import { UserCart } from '../components/carts/UserCart'
 
 const Home: NextPage = () => {
   const [ showLogo, setShowLogo ] = useState(0)
-  const [ api, setApi ] = useState('not request')
-
-  useEffect(() => {
-    fetch("http://127.0.0.1:5000")
-      .then(res => res.json())
-      .then(
-        (result) => {
-          setApi(result)
-        },
-        (error) => {
-          setApi('request to python rest api error')
-        }
-      )
-    });
 
   const devLogo = () => {
     switch(showLogo){
@@ -55,7 +41,6 @@ const Home: NextPage = () => {
       <Background>
         <Container>
           <div className='flex flex-col items-center'>
-            <p>Api request: {api}</p>
             <div className='w-[660px] text-[54px] font-bold leading-[60px] mt-[80px]'>
               <p className='text-center'>Get custom solutions <br/>
                 in product development and sales services</p>
