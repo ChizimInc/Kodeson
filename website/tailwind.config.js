@@ -30,7 +30,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        worksans: ["WorkSans", "sans-serif"]
+        worksans: ["WorkSans", "sans-serif"],
+        onest: ["Onest", "sans-serif"]
       },
       colors: {
         primary: {
@@ -69,11 +70,17 @@ module.exports = {
         'app-color-300': '#25723E',
         'app-color-400': '#FFFFFF',
         'app-color-500': '#EAF0EC',
+        'app-color-600': '#3262D1'
       },
       backgroundImage: () => ({
         'logo-navbar': "url('/logo.svg')",
         'elipse-background': "url('/images/background/elipse.svg')",
         'image-mockups': "url('/images/image-mockups.png')",
+        'team-image': "url('/images/team.svg')",
+        'team-dorian': "url('/images/ourteam/dorian.svg')",
+        'team-artiom': "url('/images/ourteam/artiom.svg')",
+        'team-vitali': "url('/images/ourteam/vitali.svg')",
+        'europe-map': "url('/images/europe-map.svg')",
       }),
       backgroundSize: {
         'custom-mobile-header-size': '100% 50%',

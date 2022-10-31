@@ -10,7 +10,7 @@ export default function Solution() {
       <Background>
         <Container>
           <div className='mt-24'>
-            <div className='flex justify-center text-[40px] font-bold my-16'>
+            <div className='flex justify-center font-worksans text-[48px] tracking-[-0.01em] font-bold my-16'>
               <p>What can we do for you</p>
             </div>
             <div className='flex justify-between mt-6'>
@@ -53,6 +53,7 @@ export default function Solution() {
               <Cart 
                 title='Let’s roll up our sleeves' 
                 content='We believe in your idea, but we don&apos;t believe in you. If you need something listed above – leave it with us. We will take it to the next level. Okay?'
+                style='blue'
               />
             </div>
           </div>
@@ -60,14 +61,14 @@ export default function Solution() {
       </Background>
       <Container>
           <div className='w-full min-h-[488px] bg-[#D23C77] rounded-3xl text-white mt-44 mb-36 flex flex-col items-center'>
-            <div className='text-[48px] font-bold text-center mt-[76px] leading-[56px] mx-12'>
+            <div className='text-[48px] font-bold font-worksans text-center mt-[76px] leading-[56px] mx-12'>
               <p>Got a project?</p>
 							<p>Let&apos;s build it properly. Together.</p>
             </div>
 						<div className='text-[18px] max-w-[660px] mt-[60px] text-center mx-12'>
 							<p>Have a great product idea, or looking for a remote team to build products for your company? We would love to hear from you.</p>
 						</div>
-						<div className='mt-[60px] mb-16'>
+						<div className='mt-[60px] mb-16 font-onest'>
 							<Button title='Contact' color='bg-app-color-400' textColor='text-[#D33F79]' href='/contact' />
 						</div>
           </div>

@@ -14,7 +14,7 @@ const Footer = () => {
             <div>
               <div className='flex items-center'>
                 <div className='bg-logo-navbar w-[36px] h-[36px] bg-no-repeat bg-center bg-contain'></div>
-                <div className='ml-[1px] text-[26px] font-bold'>Finhub</div>
+                <div className='ml-[3px] text-[26px] font-bold'>Kodeson</div>
               </div>
               <div className="text-[16px] leading-[24px] font-light max-w-[400px] mt-[40px] mr-16">
                 <p>Finhub is an expert team with over 10 years of experience in the European market that adjusts to your specific needs without wasting your time.</p>

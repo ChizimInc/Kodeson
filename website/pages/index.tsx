@@ -42,12 +42,12 @@ const Home: NextPage = () => {
         <Container>
           <div className='flex flex-col items-center'>
             <div className='w-[660px] text-[54px] font-bold leading-[60px] mt-[80px]'>
-              <p className='text-center'>Get custom solutions <br/>
-                in product development and sales services</p>
+              <p className='text-center font-worksans'>Get custom solutions 
+                in product development and outstaffing</p>
             </div>
-            <div className='w-[560px] text-[15px] font-normal leading-[24px] mt-[40px]'>
-              <p className='text-center'>Finhub is an expert team with over 10 years of experience in the European market 
-                that adjusts to your specific needs without wasting your time.</p>
+            <div className='w-[560px] text-[18px] font-normal leading-[24px] mt-[40px]'>
+              <p className='text-center'>Let's be clear from the start - no vague promises here. 
+                We're a software development company with years of experience and a solid track record of getting stuff done.</p>
             </div>
             <div className='mt-[30px] text-[#3262D1] cursor-pointer'>
               <Link href='/solution' passHref>
@@ -78,7 +78,7 @@ const Home: NextPage = () => {
       <Background>
         <Container>
           <div>
-            <div className='flex justify-center text-[40px] font-bold my-12'>
+            <div className='flex font-worksans justify-center text-[40px] font-bold my-12'>
               <p>What can we do for you</p>
             </div>
             <div className='flex justify-between'>

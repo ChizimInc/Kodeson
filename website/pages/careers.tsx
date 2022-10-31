@@ -13,13 +13,13 @@ export default function Careers() {
       <Background>
         <Container>
           <div className='flex flex-col items-center'>
-            <div className='w-[660px] text-[54px] font-bold leading-[60px] mt-[80px]'>
+            <div className='w-[801px] text-[64px] font-worksans font-bold leading-[60px] mt-[80px]'>
               <p className='text-center'>Ready to jump on board?</p>
             </div>
-            <div className='w-[560px] text-[15px] font-normal leading-[24px] mt-[40px]'>
+            <div className='w-[560px] text-[18px] font-normal leading-[24px] mt-[40px]'>
               <p className='text-center'>We are a diverse team with diverse backgrounds, such as engineering, finance, computer science, arts, law, and more.</p>
             </div>
-            <div className='w-[560px] text-[15px] font-normal leading-[24px] mt-[20px]'>
+            <div className='w-[560px] text-[18px] font-normal leading-[24px] mt-[20px]'>
               <p className='text-center'>We would love to have you.</p>
             </div>
             <div className='mt-[40px] mb-16'>
@@ -30,7 +30,7 @@ export default function Careers() {
       </Background>
       <Container>
         <div>
-          <div className='flex justify-center text-[40px] font-bold my-16'>
+          <div className='flex font-worksans tracking-[-0.01em] justify-center text-[40px] font-bold my-16'>
             <p>Why work at Finhub?</p>
           </div>
           <div className='flex justify-evenly'>
@@ -130,6 +130,46 @@ export default function Careers() {
               <ApplyCart title='Frontend Developer' address='In-office, Chisinau' />
               <ApplyCart title='Flutter Developer' address='In-office, Chisinau' />
               <ApplyCart title='QA Engineer' address='In-office, Chisinau' />
+            </div>
+
+            <div className='text-[30px] font-worksans font-semibold mt-[120px]'>
+              <p>Looking for an internship?</p>
+            </div>
+            <div className='font-light text-[14px]'>
+              <p>Complete the form below</p>
+            </div>
+            <div className='flex mt-24'>
+              <div className='w-[50%]'>
+                <div className='flex'>
+                  <div>
+                    <input type="text" className='w-[240px] border-b-2 border-[#797979] mr-12 bg-inherit' />
+                    <p className='text-[#797979] mt-1'>Name*</p>
+                  </div>
+                  <div>
+                    <input type="text" className='w-[240px] border-b-2 border-[#797979] mr-12 bg-inherit' />
+                    <p className='text-[#797979] mt-1'>Job position*</p>
+                  </div>
+                </div>
+                <div className='flex mt-16'>
+                  <div>
+                    <input type="text" className='w-[240px] border-b-2 border-[#797979] mr-12 bg-inherit' />
+                    <p className='text-[#797979] mt-1'>Phone*</p>
+                  </div>
+                  <div>
+                    <input type="text" className='w-[240px] border-b-2 border-[#797979] mr-12 bg-inherit' />
+                    <p className='text-[#797979] mt-1'>E-mail*</p>
+                  </div>
+                </div>
+              </div>
+              <div className='w-[50%] flex flex-col'>
+                <div className='max-w-[550px]'>
+                <input type="text" className='w-[100%] h-[143px] rounded-xl border-2 border-[#797979] mr-12 bg-inherit' />
+                <p className='text-[#797979] mt-1'>Message</p>
+                </div>
+              </div>
+            </div>
+            <div className='my-24 w-[165px]'>
+              <Button title='Submit form' color='bg-app-color-500' textColor='text-app-color-200' href='/submit' />
             </div>
           </div>
         </Container>
