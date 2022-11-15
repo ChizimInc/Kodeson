@@ -23,6 +23,7 @@ def f_compose_email_cv(request_dict):
 
     _f_name = request_dict.get('first_name')
     _l_name = request_dict.get("last_name")
+    _job_position = request_dict.get('job_position')
     _phone = request_dict.get('phone')
     _email = request_dict.get('phone')
     _message = request_dict.get('message')
@@ -30,6 +31,7 @@ def f_compose_email_cv(request_dict):
     _root_content = "Name: %s %s" % (_f_name, _l_name)
     _root_content += "\nPhone: %s" % _phone
     _root_content += "\nEmail: %s" % _email
+    _root_content += "\nJob Position: %s" % _job_position
     _root_content += "\n\n"
     _root_content += _message
 
