@@ -19,7 +19,29 @@ def create_file(f_bytes, file_name):
     return f_obj
 
 def f_compose_email_cv(request_dict):
-    pass
+    request_dict = request_dict.to_dict()
+
+    _f_name = request_dict.get('first_name')
+    _l_name = request_dict.get("last_name")
+    _phone = request_dict.get('phone')
+    _email = request_dict.get('phone')
+    _message = request_dict.get('message')
+
+    _root_content = "Name: %s %s" % (_f_name, _l_name)
+    _root_content += "\nPhone: %s" % _phone
+    _root_content += "\nEmail: %s" % _email
+    _root_content += "\n\n"
+    _root_content += _message
+
+    _subject = "CV from %s %s" % (_f_name, _l_name)
+    _composedMessage = MIMEMultipart()
+    _composedMessage["Subject"] = _subject
+    _composedMessage["From"] = "Not Used"
+    _composedMessage["To"] = email_address
+
+    _composedMessage.attach(MIMEText(_root_content, 'plain', 'utf-8'))
+    return _composedMessage
+
 
 def f_compose_email_contact_us(request_dict):
     request_dict = request_dict.to_dict()
@@ -43,7 +65,7 @@ def f_compose_email_contact_us(request_dict):
 
     _composedMessage.preamble = _subject
     _composedMessage["Subject"] = _subject
-    _composedMessage["From"] = _sender
+    _composedMessage["From"] = "Not Used"
     _composedMessage["To"] = email_address
 
     _composedMessage.attach(MIMEText(_root_content, 'plain', 'utf-8'))
