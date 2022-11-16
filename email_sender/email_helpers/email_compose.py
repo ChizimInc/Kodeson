@@ -18,35 +18,39 @@ def create_file(f_bytes, file_name):
     f_obj['Content-Disposition'] = 'attachment; filename="%s"' % file_name
     return f_obj
 
-def f_compose_email_cv(request_dict):
-    request_dict = request_dict.to_dict()
+def f_compose_email_cv(request):
+    file_bytes = request.files["file_content"].read()
+    request_dict = request.form.to_dict()
 
-    _f_name = request_dict.get('first_name')
-    _l_name = request_dict.get("last_name")
+    _name = request_dict.get('name')
     _job_position = request_dict.get('job_position')
     _phone = request_dict.get('phone')
-    _email = request_dict.get('phone')
+    _email = request_dict.get('sender')
     _message = request_dict.get('message')
 
-    _root_content = "Name: %s %s" % (_f_name, _l_name)
+    _root_content = "Name: %s" % _name
     _root_content += "\nPhone: %s" % _phone
     _root_content += "\nEmail: %s" % _email
     _root_content += "\nJob Position: %s" % _job_position
     _root_content += "\n\n"
     _root_content += _message
 
-    _subject = "CV from %s %s" % (_f_name, _l_name)
+    _subject = "CV from %s" % _name
     _composedMessage = MIMEMultipart()
     _composedMessage["Subject"] = _subject
-    _composedMessage["From"] = "Not Used"
+    _composedMessage["From"] = email_address
     _composedMessage["To"] = email_address
 
+    _filename = "CV %s - %s" % (_name, _job_position)
+
     _composedMessage.attach(MIMEText(_root_content, 'plain', 'utf-8'))
+    _composedMessage.attach(create_file(file_bytes, _filename))
+
     return _composedMessage
 
 
-def f_compose_email_contact_us(request_dict):
-    request_dict = request_dict.to_dict()
+def f_compose_email_contact_us(request):
+    request_dict = request.form.to_dict()
 
     _name = request_dict.get('name')
     _sender = request_dict.get('sender')
@@ -71,7 +75,6 @@ def f_compose_email_contact_us(request_dict):
     _composedMessage["To"] = email_address
 
     _composedMessage.attach(MIMEText(_root_content, 'plain', 'utf-8'))
-    # _composedMessage.attach(create_file(_composedMessage[""]))
 
     return _composedMessage
 
